@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+          $('a').click(function(){
+            alert('Hello you are in jQuery World');
+          });
+          $("button").click(function(){
+          $("p").addClass("intro");
+          });
+          $("button").click(function(){
+            $("input:text").val("Kiran");
+          });
+          $("button").click(function(){
+            $("p").text("Helo World");
+          })
+          $("button").click(function(){
+             $("p").html("This is <b>html!</b>");
+          })
+          $("input").focus(function(){
+            $("span").css("display","inline").fadeOut(1000);
+          })
+          $("button").click(function(){
+          $("div").data("greeting", "Hello world");
+          })
+          $("#btn2").click(function(){
+        alert($("div").data("greeting"));
+        });
+        $("#btn3").click(function(){
+          $("p").before("<p>Hello world</p>");
+        });
+        $("#btn4").click(function(){
+          $("p").after("<p>Hello <b>world</b></p>");
+        });
+        $("#btn5").click(function(){
+          $("p").append("<p>Append</p>");
+        });
+        $("#btn6").click(function(){
+          $("p").prepend("<p>world</p>");
+        });
+        $("#btn7").click(function(){
+          $("ol").append("<li>Hello world</li>");
+        });
+        $("#show").click(function(){
+          $("p").show();
+        })
+        $("#hide").click(function(){
+          $("p").hide();
+        })
+        $("#toggle").click(function(){
+          $("p").toggle();
+        })
+        $("#st").click(function(){
+          $("p").slideToggle();
+        })
+        $("#sup").click(function(){
+          $("p").slideUp();
+        })
+        $("#sdown").click(function(){
+          $("p").slideDown();
+        })
+        $("#fi").click(function(){
+          $("p").fadeIn();
+        })
+        $("#fo").click(function(){
+          $("p").fadeOut();
+        })
+       });
+</script>
+<style media="screen">
+  .intro{
+
+    color: blue;
+  }
+  .div{
+    color: green;
+  }
+  </style>
+</head>
+<body>
+  <h1>1</h1>
+  <p>
+    add Class
+  </p>
+  <p>
+    red
+  </p>
+  <p>
+    once thre was a <intro title="huge, gigantic"> large</intro>dianosor......
+  </p>
+  The title of emphasis  is <div></div>
+  <button>addedclass</button>
+  <button id="btn2">Data Stored in div</button>
+  <button id="btn3">Before function</button>
+  <button id="btn4">Afetr function</button><br>
+  <button id="btn5">append</button>
+  <button id="btn6">prepend</button>
+  <button id="btn7">List Apppend</button><br>
+  <button id="show">Show</button>
+  <button id="hide">Hide</button><br>
+  <button id="toggle">Toggle</button><br>
+  <button id="st">Slide Toggle</button>
+  <button id="sup">Slide Up</button>
+  <button id="sdown">Slide Down</button><br>
+    <button id="fi">fadeIn</button>
+    <button id="fo">fadeOut</button>
+  <input type="text"><span>focus hear </span>
+  <a href="https://www.google.com/">Google</a>
+  <ol>
+    <li>Hello</li>
+    <li>world</li>
+  </ol>
+  <div>
+  </div>
+  </body>
+  </html>

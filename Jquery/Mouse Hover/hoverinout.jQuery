@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $('img').hover(
+          function(){
+          var temp= $(this).attr("data-alt-src");
+          var alt=$(this).attr("src");
+          console.log(temp + alt)
+          $(this).attr('src',temp);
+          $(this).attr('data-alt-src',alt);
+        },
+           function(){
+          var temp= $(this).attr("data-alt-src");
+          var alt=$(this).attr("src");
+          $(this).attr('src',temp);
+          $(this).attr('data-alt-src',alt);
+        });
+
+      });
+
+    </script>
+  </head>
+  <style media="screen">
+  .layout {
+    width: 820px;
+    margin: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  img {
+      height: 400px;
+      width: 400px;
+      margin-left: 5px;
+    }
+
+
+  </style>
+  <body>
+    <div class="layout">
+
+
+    <div class="header">
+      <h1>Hover In / Out</h1>
+    </div>
+    <div >
+      <img src="one-piece.jpg" data-alt-src='Naruto.jpg.jpg'    class="img"/>
+      <img src="one-piece.jpg" data-alt-src='Naruto.jpg.jpg'   class="img"/>
+      <img src="one-piece.jpg" data-alt-src='Naruto.jpg.jpg'    class="img"/>
+      <img src="one-piece.jpg" data-alt-src='Naruto.jpg.jpg'    class="img"/>
+    </div>
+     </div>
+  </body>
+</html>

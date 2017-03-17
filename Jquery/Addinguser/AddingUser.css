@@ -1,0 +1,21 @@
+.userdetails {
+  width: 500px;
+  margin: auto;
+}
+
+th {
+    font-weight: bold;
+    text-align:center;
+}
+
+td, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+}

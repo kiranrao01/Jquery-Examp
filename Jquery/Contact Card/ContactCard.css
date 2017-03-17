@@ -1,0 +1,31 @@
+.userdetails {
+   width:970px;
+   margin: auto;
+
+}
+
+.details{
+height:500px;
+width:600px;
+border: 2px solid black;
+display: inline-block;
+vertical-align: top;
+
+}
+
+.collection {
+
+height:500px;
+width:350px;
+border: 2px solid black;
+display: inline-block;
+
+}
+.card {
+    background-color: #333;
+    color: #fff;
+    height: 100px;
+    width:auto;
+    padding: 30px;
+    margin: 0 0 30px 0;
+}

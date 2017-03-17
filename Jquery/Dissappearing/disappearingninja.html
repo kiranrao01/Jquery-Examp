@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style media="screen">
+#Disappearing-Ninja{
+  width: 970px;
+  border: 2px solid black;
+  margin-left: 45px;
+  align-items: center;
+}
+#Disappearing-Ninja {
+  text-align: center;
+}
+#set1 img{
+  height: 220px;
+  width: 220px;
+  margin-left: 18px;
+}
+#set2 img{
+  height: 220px;
+  width: 220px;
+  margin-left: 18px;
+}
+  </style>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" >
+  $(document).ready(function(){
+    $('img').click(function(){
+        $(this).hide();
+      });
+        $("button").click(function(){
+          $("img").show();
+        });
+  })
+  </script>
+  <body>
+    <div id="Disappearing-Ninja">
+      <div class="banner">
+        <h1>
+          Disappearing-Ninja
+        </h1>
+
+      </div>
+    <div id="set1">
+    <img src="Naruto.jpg.jpg"/>
+    <img src="Naruto.jpg.jpg"/>
+    <img src="Naruto.jpg.jpg"/>
+    <img src="Naruto.jpg.jpg"/>
+    </div>
+    <div id="set2">
+    <img src="Naruto.jpg.jpg"/>
+    <img src="Naruto.jpg.jpg"/>
+    <img src="Naruto.jpg.jpg"/>
+    <img src="Naruto.jpg.jpg"/>
+    </div>
+    <div>
+      <button>Display Image</button>
+    </div>
+    </div>
+  </body>
+</html>
